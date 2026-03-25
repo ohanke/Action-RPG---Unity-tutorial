@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 43040685}
   - component: {fileID: 43040689}
   - component: {fileID: 43040690}
+  - component: {fileID: 43040691}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -315,6 +316,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &43040691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43040684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdea6bf47627def45a4b37c2bdefd7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewEmptyCSharpScript
+  currentHealth: 3
+  maxHealth: 5
 --- !u!1 &229708538
 GameObject:
   m_ObjectHideFlags: 0
@@ -9069,7 +9084,7 @@ Tilemap:
       - {fileID: -2664502254669432612, guid: 673dbe9982c582846b72211b077751f6, type: 3}
       - {fileID: 2339070538383146887, guid: 673dbe9982c582846b72211b077751f6, type: 3}
       - {fileID: 1794980880798166544, guid: 673dbe9982c582846b72211b077751f6, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: 11, z: 0}
@@ -9716,6 +9731,7 @@ GameObject:
   - component: {fileID: 2117886718}
   - component: {fileID: 2117886717}
   - component: {fileID: 2117886720}
+  - component: {fileID: 2117886721}
   m_Layer: 0
   m_Name: Enemy_Warrior_Red
   m_TagString: Untagged
@@ -9861,6 +9877,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.09738755, y: -0.11611563}
   m_Size: {x: 0.605103, y: 1.008567}
   m_Direction: 0
+--- !u!114 &2117886721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117886716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59706f226f60b44cba7fd129167ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy_Combat
+  damageRedWarrior: -1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

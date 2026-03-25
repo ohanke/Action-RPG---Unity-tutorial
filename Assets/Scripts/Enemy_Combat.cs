@@ -6,6 +6,6 @@ public class Enemy_Combat : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.GetComponent<Player_Health>().ChangeHealth(-damageRedWarrior);
+        collision.gameObject.GetComponent<Player_Health>().ChangeHealth(damageRedWarrior);
     }
 }
